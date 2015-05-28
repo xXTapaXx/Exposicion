@@ -1,13 +1,14 @@
 <?php
 Class Mensaje extends CI_Model
 {
-    function insertar($mensaje,$timestamp,$status,$tipo)
+    function insertar($mensaje,$timestamp,$status,$tipo,$user)
     {
         $data = array(
             'mensaje' => $mensaje,
             'timestamp' => $timestamp,
             'status' => $status,
-            'tipo' => $tipo
+            'tipo' => $tipo,
+            'user' => $user
         );
 
         $this->db->insert('mensajes', $data);

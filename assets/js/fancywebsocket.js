@@ -66,7 +66,7 @@ function send( text )
 }
 $(document).ready(function() 
 {
-	Server = new FancyWebSocket('ws://192.168.0.115:9000');
+	Server = new FancyWebSocket('ws://192.168.0.117:9000');
     Server.bind('open', function()
 	{
     });
@@ -89,7 +89,7 @@ function actualiza_mensaje(message)
 				var fecha = JSONdata.fecha;
 				
 				var contenidoDiv  = $("#1").html();
-				var mensajehtml   = fecha+' : '+mensaje;
+				var mensajehtml   = '<div class="row msg_container base_send"><div class="col-md-10 col-xs-10"><div class="messages msg_send"><p>'+mensaje+'</p><time datetime="2009-11-13T20:00">'+fecha+'</time><div class="col-md-2 col-xs-2 avatar"><img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile + -Avatar-1.jpg" class=" img-responsive "></div></div></div></div>';
 				
 				$("#1").html(contenidoDiv+'<br/>'+mensajehtml);
 }

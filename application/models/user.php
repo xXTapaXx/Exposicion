@@ -20,5 +20,24 @@ Class User extends CI_Model
             return false;
         }
     }
+
+    function traerUsuariosLogeados()
+    {
+        $this -> db -> select('id,username,password ');
+       $this -> db -> where('logeado', 'si');
+
+
+        $query = $this -> db -> get('users');
+
+        if($query -> num_rows() > 0 )
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
 ?>
