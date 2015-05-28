@@ -163,6 +163,7 @@ body, html {
     padding: 0 10px 10px;
     max-height:300px;
     overflow-x:hidden;
+    overflow-y: scroll;
 }
 .top-bar {
     background: #666;
@@ -265,11 +266,6 @@ img {
     bottom:0;
 }
 
-.conteinerMsg{
-    max-height: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
 
 .usuariosLogeados{
     background-color: red;

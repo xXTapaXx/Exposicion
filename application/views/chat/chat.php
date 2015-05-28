@@ -1,16 +1,16 @@
 
 
 <div class="container">
-    <div class="usuariosLogeados">
+    <!--<div class="usuariosLogeados">
         <div class="userContainer">
             <ul>
                 <?php if($user != FALSE)foreach($user as $row):
                     if($row->username != $username)
-                        echo '<li><a href="#" id="'.$row->id.'">'.$row->username.'</a></li>';;
+                        echo '<li><a href="#" id="'.$row->id.'" onClick="asignarChat('.$idUsername. ','.$row->id.');">'.$row->username.'</a></li>';;
                  endforeach;?>
             </ul>
         </div>
-    </div>
+    </div>-->
     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
         <div class="col-xs-12 col-md-12">
             <div class="panel panel-default">
@@ -20,7 +20,6 @@
                         <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - <?php echo $username; ?></h3>
                     </div>
                     <div class="col-md-4 col-xs-4" style="text-align: right;">
-                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
                         <a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
                     </div>
                 </div>
@@ -56,7 +55,7 @@
 
                  endforeach;?>
                 </div>
-
+                </div>
                 <div class="panel-footer">
                     <div class="input-group">
                         <form action="" id="form-send-message">

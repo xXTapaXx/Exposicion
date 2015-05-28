@@ -26,6 +26,7 @@ function index()
             $data = array(
                 'mensajes' => $this->mensaje->selectMensaje(),
                 'username' => $session_data['username'],
+                'idUsername' => $session_data['id'],
                 'user' => $this->user->traerUsuariosLogeados(),
             );
 
@@ -61,6 +62,7 @@ function index()
         $session_data = $this->session->userdata('logged_in');
         $tipo = "1";
         $mensaje = $this->input->post('message');
+        $hidden = $this->input->post('hidden');
         $timestamp = date("Y-m-d H:i:s");
         $user = $session_data['username'];
         $this->mensaje->insertar($mensaje,$timestamp,'1','1',$user);
