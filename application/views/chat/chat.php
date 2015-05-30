@@ -43,7 +43,7 @@
                     else
                         echo  ' <div class="row msg_container base_sent">
                         <div class="col-md-10 col-xs-10">
-                            <div class="messages msg_sent">
+                            <div class="messages_sent msg_sent">
                                 <p>'.$row->mensaje.'</p>
                                 <time datetime="2009-11-13T20:00">'.$row->timestamp.'</time>
                             </div>
