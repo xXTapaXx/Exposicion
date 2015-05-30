@@ -31,8 +31,8 @@
                         if($row->user != $username)
                     echo  '<div class="row msg_container base_receive">
                         <div class="col-md-2 col-xs-2 avatar">
-                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                        </div>
+                           <!-- <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                       --> </div>
                         <div class="col-md-10 col-xs-10">
                             <div class="messages msg_receive">
                                 <p>'.$row->mensaje.'</p>
@@ -49,8 +49,8 @@
                             </div>
                         </div>
                         <div class="col-md-2 col-xs-2 avatar">
-                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                        </div>
+                            <!-- <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        /--></div>
                     </div>';
 
                  endforeach;?>
