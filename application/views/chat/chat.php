@@ -11,16 +11,20 @@
             </ul>
         </div>
     </div>-->
+    
     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
         <div class="col-xs-12 col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading top-bar">
                     <div class="col-md-8 col-xs-8">
+                        <?php if($user != FALSE)foreach($user as $row):
+                            if($row->username != $username)
+                                echo '<h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - '.$row->username.'</h3>';
+                        endforeach;?>
 
-                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - <?php echo $username; ?></h3>
                     </div>
                     <div class="col-md-4 col-xs-4" style="text-align: right;">
-                        <a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
                     </div>
                 </div>
 

@@ -17,7 +17,6 @@
 
 <input type="submit" value="Login" class="btn btn-lg btn-primary btn-block btn-signin"/><br/>
 
-       <a href="#" class="forgot-password">Register</a>
    </div>
     </div>
     </div>
