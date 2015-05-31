@@ -11,7 +11,7 @@
             </ul>
         </div>
     </div>-->
-    
+
     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
         <div class="col-xs-12 col-md-12">
             <div class="panel panel-default">
